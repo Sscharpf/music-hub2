@@ -59,6 +59,10 @@ body {
   list-style: none;
 }
 
+.top-nav-link:hover {
+    color: #00ffff;
+}
+
 .top-nav-link {
   display: block;
   padding: 8px 12px 19px 12px;
@@ -125,6 +129,10 @@ body {
   display: flex;
   justify-content: center;
   margin: 64px 0 26px 0;
+}
+
+.sort-button:hover {
+    color:#00ffff;
 }
 
 .sort-button {
@@ -328,4 +336,8 @@ body {
   font-size: 45px;
   line-height: 57px;
   text-decoration: none;
+}
+
+.footer-nav-link:hover {
+  color: #00ffff;
 }
