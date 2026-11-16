@@ -1,0 +1,331 @@
+/* ------------------------------------------------------------
+   Music Hub  |  styles.css
+   Colors, fonts and sizes come from the Figma file "Project 2".
+   ------------------------------------------------------------ */
+
+/* The Thirsty Script font (used for the "Music Hub" logo).
+   It comes from the thirsty_script.zip file, saved in the fonts folder. */
+@font-face {
+  font-family: "Thirsty Script";
+  src: url("fonts/ThirstyScriptExtraBoldDemo.otf");
+}
+
+/* ---------- Page basics ---------- */
+
+body {
+  /* Colors from the Figma design */
+  --background: #262626;
+  --primary-text: #ffffff;
+  --headers: #00ffff;
+  --secondary-headers: #ff73f8;
+  --more-text: #000000;
+  --red: #ff0004;
+
+  margin: 0;
+  background-color: var(--background);
+  color: var(--primary-text);
+  font-family: "Inter", sans-serif;
+  font-size: 21px;
+}
+
+/* ---------- Header: logo + top navigation ---------- */
+
+.header {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 814px;
+  height: 224px;
+  margin: 43px auto 0 auto;
+  background-color: var(--more-text);
+  border-radius: 50%;
+  color: var(--headers);
+  font-family: "Thirsty Script", cursive;
+  font-size: 110px;
+  line-height: 160px;
+  text-decoration: none;
+}
+
+.top-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+  margin: 82px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-nav-link {
+  display: block;
+  padding: 8px 12px 19px 12px;
+  background-color: var(--more-text);
+  color: var(--secondary-headers);
+  font-family: "Tilt Neon", sans-serif;
+  font-size: 58px;
+  line-height: 58px;
+  text-decoration: none;
+}
+
+/* ---------- Main area ---------- */
+
+.main {
+  padding-bottom: 38px;
+}
+
+.page-title {
+  margin: 81px 0 0 0;
+  color: var(--headers);
+  font-family: "Pacifico", cursive;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 112px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* The paragraph(s) under the page title on the list pages */
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 772px;
+  margin: 41px auto 0 auto;
+  text-align: center;
+}
+
+.intro-text {
+  margin: 0;
+}
+
+/* ---------- Home page ---------- */
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 764px;
+  margin: 47px auto 43px auto;
+}
+
+.home-paragraph {
+  margin: 0;
+}
+
+.home-label {
+  color: var(--secondary-headers);
+}
+
+/* ---------- "Sort By" button (Timeline + Alphabetical pages) ---------- */
+
+.sort-area {
+  display: flex;
+  justify-content: center;
+  margin: 64px 0 26px 0;
+}
+
+.sort-button {
+  padding: 9px 25px 9px 25px;
+  background-color: var(--more-text);
+  color: var(--secondary-headers);
+  font-family: "Tilt Neon", sans-serif;
+  font-size: 58px;
+  line-height: 58px;
+  text-decoration: none;
+}
+
+/* ---------- Entries: one photo box + one text box per band / concert ---------- */
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  padding-right: 118px;
+}
+
+.entry {
+  display: flex;
+  width: 1162px;
+  margin-bottom: 77px;
+}
+
+/* Left side: the photo (or photos), centered in a 640px box */
+.entry-photos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 640px;
+}
+
+.entry-photo {
+  height: 300px;
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Right side: the text */
+.entry-text {
+  display: flex;
+  flex-direction: column;
+  width: 492px;
+  margin-left: 30px;
+  font-weight: 700;
+}
+
+.entry-title {
+  margin: 0;
+  color: var(--headers);
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.entry-line {
+  margin: 0;
+}
+
+/* The pink "Members:" / "Venue:" / "Fun Fact:" words */
+.label {
+  color: var(--secondary-headers);
+  font-size: 25px;
+}
+
+/* On the Alphabetical page, the band this entry is sorted under */
+.red-band {
+  color: var(--red);
+}
+
+/* "Listen to ... | Spotify" sits at the bottom of the text box, level with the photo */
+.spotify-link {
+  align-self: flex-start;
+  margin-top: auto;
+  color: var(--primary-text);
+  text-decoration: underline;
+}
+
+/* ---------- About page ---------- */
+
+.about-columns {
+  display: flex;
+  gap: 203px;
+  width: 1085px;
+  margin: 41px auto 23px auto;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.about-text {
+  width: 492px;
+}
+
+.about-email {
+  font-style: normal;
+}
+
+.about-email-link {
+  color: var(--secondary-headers);
+  text-decoration: none;
+}
+
+.about-paragraph {
+  margin: 0;
+}
+
+.about-goal {
+  margin-top: 57px;
+}
+
+.about-extra {
+  width: 390px;
+}
+
+.about-figure {
+  margin: 59px 0 0 0;
+}
+
+.about-photo {
+  display: block;
+  width: 382px;
+  height: 282px;
+  object-fit: cover;
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-caption {
+  margin-top: 27px;
+  font-size: 21px;
+  text-align: center;
+}
+
+.sources {
+  margin-top: 86px;
+  padding-left: 10px;
+  overflow-wrap: break-word;
+}
+
+.sources-line {
+  margin: 0;
+}
+
+.source-link {
+  color: var(--primary-text);
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 148px;
+  background-color: var(--more-text);
+}
+
+/* The round "M H" logo */
+.footer-logo {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 121px;
+  height: 121px;
+  margin-left: 17px;
+  padding: 10px 0 0 14px;
+  background-color: var(--background);
+  border-radius: 50%;
+  color: var(--headers);
+  font-family: "Thirsty Script", cursive;
+  font-size: 48px;
+  text-decoration: none;
+}
+
+.footer-logo-m {
+  display: block;
+  line-height: 70px;
+}
+
+.footer-logo-h {
+  display: block;
+  margin: -39px 0 0 47px;
+  line-height: 70px;
+}
+
+.footer-nav {
+  flex: 1;
+  margin: 0 50px 0 88px;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav-link {
+  color: var(--secondary-headers);
+  font-family: "Tilt Neon", sans-serif;
+  font-size: 45px;
+  line-height: 57px;
+  text-decoration: none;
+}
