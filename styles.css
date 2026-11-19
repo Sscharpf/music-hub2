@@ -75,7 +75,6 @@ body {
   line-height: 58px;
   text-decoration: none;
   box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.75);
-
 }
 
 /* ---------- Main area ---------- */
@@ -147,6 +146,7 @@ body {
   font-size: 58px;
   line-height: 58px;
   text-decoration: none;
+  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.75);
 }
 
 /* ---------- Entries: one photo box + one text box per band / concert ---------- */
